@@ -23,18 +23,18 @@ int main(int argc, char* argv[]){
             std::string t = "";
             t += fileData[i];
             i++;
-            while(i<size and fileData[i] >= '0' and fileData[i]<='9'){
+            while(i<size and fileData[i] >= '0' and fileData[i] <= '9'){
                 t += fileData[i];
                 i++;
             }
             int r = std::stoi(t);
             r *= sign;
             if(isPrime(r)){
-                    std::cout << r;
+                 std::cout << r;
                  std::cout << " Prime" << std::endl;
             }
              else
-                 return 0;
+                return 1;
         }
         else
             ++i;

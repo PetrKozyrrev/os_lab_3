@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd scr
+cd src
 
 # Создание файла сборки
 mkdir -p build
